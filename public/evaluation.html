@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Evaluation</title>
+        <link rel="stylesheet" href="./style/evaluation.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    </head>
+    <body>
+        <div class="main">
+            <div class="nav">
+                <div class="logo">
+                    <h2>SafeNet</h2>
+                </div>
+                <div class="menu">
+                    <ul class="mainUL">
+                        <li><a href="home.html">HOME</a></li>
+                        <li id="scan"><a href="#">SCAN</a><i class="fa-solid fa-caret-down fa-lg"></i>
+                            <div class="subMenu">
+                                <ul class="subUl">
+                                    <li><a href="scanFile.html">PE FILE</a></li>
+                                    <li><a href="scanURL.html">URL</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="history.html">HISTORY</a></li>
+                        <li><a id="logout">LOGOUT</a></li>
+                    </ul>
+                </div>
+            </div>    
+            <div class="evaluation">
+                <div id="evalHeadingDiv">
+                    <i id="evalIcon" class="fa-solid fa-square-poll-vertical"></i>
+                    <h2 id="evalHeading">Model Evaluation</h2>
+                    <div id="evalSelect">
+                        <select id="evalDropdown" name="evalDropdown">
+                            <option value="-">SELECT MODEL</option>
+                            <option value="url">URL Model</option>
+                            <option value="file">File Model</option>
+                        </select>
+                    </div>
+                    <div id="modelNameDiv">
+                        <p>Model used: <span id="modelName">---</span></p>
+                    </div>
+                </div>
+                <hr id="evalhr">
+                <div id="urlModel">
+                    <div id="urlRates">
+                        <img src="./style/eval_img/urlModel_rates.PNG" alt="Image preview" width="400" height="200"><br><br>
+                    </div>
+                    <div id="urlClassificationReport">
+                        <img src="./style/eval_img/urlModel_classification_report.PNG" alt="Image preview" width="450" height="200"><br><br>
+                    </div>
+                    <div id="urlConfusionMatrix">
+                        <img src="./style/eval_img/urlModel_confusion_matrix.PNG" alt="Image preview" width="350" height="300"><br><br>
+                    </div>
+                    <div id="urlClassDistribution">
+                        <img src="./style/eval_img/urlModel_class_distribution.PNG" alt="Image preview" width="410" height="300"><br><br>
+                    </div>
+                </div>
+                <div id="filescanModel">
+                    <div id="rgbDataset">
+                        <img src="./style/eval_img/dataset_rgb_1.PNG" alt="Image preview" width="500" height="300"><br><br>
+                    </div>
+                    <div id="greyScaleDataset">
+                        <img src="./style/eval_img/dataset_greyscale_1.PNG" alt="Image preview" width="500" height="300"><br><br>
+                    </div>
+
+                    <div id="rgbAccuracy">
+                        <img src="./style/eval_img/accuracy_graph_rgb.PNG" alt="Image preview" width="500" height="300"><br><br>
+                    </div>
+                    <div id="greyScaleAccuracy">
+                        <img src="./style/eval_img/accuracy_graph_greyscale.PNG" alt="Image preview" width="500" height="300"><br><br>
+                    </div>
+
+                    <div id="rgbConfusionMatrix">
+                        <img src="./style/eval_img/cf_rgb.PNG" alt="Image preview" width="400" height="350"><br><br>
+                    </div>
+                    <div id="greyScaleConfusionMatrix">
+                        <img src="./style/eval_img/cf_greyscale.PNG" alt="Image preview" width="400" height="350"><br><br>
+                    </div>
+                    
+                    <div id="rgbClassDistribution">
+                        <img src="./style/eval_img/class_distribution_rgb.PNG" alt="Image preview" width="400" height="380"><br><br>
+                    </div>
+                    <div id="greyScaleClassDistribution">
+                        <img src="./style/eval_img/class_distribution_greyscale.PNG" alt="Image preview" width="420" height="400"><br><br>
+                    </div>
+
+                    <div id="rgbClassificationReport">
+                        <img src="./style/eval_img/classification_report_rgb.PNG" alt="Image preview" width="450" height="200"><br><br>
+                    </div>
+                    <div id="greyScaleClassificationReport">
+                        <img src="./style/eval_img/classification_report_greyscale.PNG" alt="Image preview" width="450" height="420"><br><br>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="/js/evaluation.js"></script>   
+    </body>
+</html>

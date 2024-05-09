@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo h2{
+    color:#2f8aa8;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 35px;
+    float: left;
+    padding-top: 15px;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 50px;
+    text-align: center;
+}
+
+.mainUL {
+    display: inline-flex;
+    list-style: none;
+    color: white;
+    padding-left: 750px;
+}
+
+.mainUL li {
+    width: 95px;
+    height: 22px;
+    margin: 15px;
+    padding: 10px;
+}
+
+.mainUL li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+
+.mainUL li:hover{
+    background-color: #2f8aa8;
+    border-radius: 3px;
+}
+
+.menu i{
+    margin-left: 10px;
+}
+
+.subMenu{
+    display: none;
+}
+
+.mainUL li:hover .subMenu{
+    display: block;
+    position: absolute;
+    background: black;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.subMenu li{
+    display: block;
+    margin:20px;
+    width: 100px;
+    padding: 5px;
+    border-bottom: 2px solid;
+}
+
+.nav{
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+}
+
+.main{
+    width: 100%;
+    height: 100vh;    
+    background: linear-gradient(to top, rgba(0,0,0,0.78)50%, rgba(0,0,0,0.78)50%), url(background4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.scnheading h2{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 45px;
+    margin-top: 2%;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    text-align: left;
+    margin-left: 35px;
+}
+
+#urlhr{
+    margin-left: 35px;
+    width:95%;
+}
+
+#scnhrTop{
+    width:100%;
+    border: 1px solid white;
+}
+
+#scnhr{
+    width:100%;
+    margin-bottom: 20px;
+    border: 1px solid white;
+}
+
+
+.fileResult{
+    width: 100%;
+    display: flex;
+}
+
+#scanResultDetails{
+    padding-top: 2px;
+}
+
+#fileFeatDetails{
+    float: left;
+    width: 45%;
+    height:58vh;
+    color: white;
+    font-size: 20px;
+    margin-left: 75px;
+    margin-top: 15px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7)50%, rgba(0,0,0,0.7)50%);
+    
+}
+
+#fileScanDetails{
+    float: left;
+    width: 45%;
+    height:58vh;
+    color: white;
+    font-size: 20px;
+    margin-left: 35px;
+    margin-top: 15px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7)50%, rgba(0,0,0,0.7)50%);
+}
+
+
+#fileScanDetails li {
+    color: white;
+    padding-bottom: 20px;
+    margin-left: 35px;
+}
+
+#detection {
+    display: none;
+    float: left;
+    width:130px;
+    height: 40px;
+    margin-left: 380px;
+    margin-top: -55px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
+    background:red;
+    color: white;
+    border: 2px solid red;
+}
+
+#scanHd{
+    padding-top: 2px;
+    height: 2vh;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    margin-left: 10px;
+    
+}
+
+#scnMainDetails{
+    width: 95%;
+    height: 15vh;
+    margin-top: 20px;
+    margin-left: 45px;
+    color: white;
+    font-size: 20px;
+}
+
+.scnDetails,.filefeatures{
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+#newScan {
+    float: left;
+    width:130px;
+    height: 40px;
+    margin-left: 1360px;
+    margin-top: -52px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    background:#2f8aa8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#newScan:hover{
+    border: 2px solid black;
+}
+
+#date,#time,#safeRec,#otherRes{
+    color: #aaa;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+#urlLength,#hostNme,#path,#digits,#letters{
+    color: #aaa;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+#filename{
+    color: #aaa;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+#newscan{
+    text-decoration: none;
+    color: white;
+}
+
+#statusDiv{
+    float: left;
+    width:100%;
+    margin-top: 2px;
+}
+
+#datetimeDiv{
+    width:50%;
+    height: 10vh;
+    font-size: 18px;
+}
+
+
+#safeRecPoints{
+    margin-top: 10px;
+    width: 95% ;
+    font-size: 17px;
+}
+
+#resourcelinks{
+    margin-top: 10px;
+    width: 95% ;
+    font-size: 17px;
+}
+
+#filenameInp,#dateInp,#timeInp,#urlLengthOut,#hostOut,#pathOut,#digitsOut,#lettersOut{
+    font-size: 17px;
+}
+
+.scnsubHeading{
+    width: 100%;
+    height:7vh;
+    background-color: #2f8aa8;
+}
+
+#links,#urlfeatdiv{
+    margin-top: 20px;
+}
+
+#resHeading,#featHeading{
+    margin-top: 10px;
+}
+
+#newTabIconSpan{
+    display: none;
+    font-size: medium;
+}
+
+#newTabIcon{
+    text-decoration: none;
+    color: white;
+}

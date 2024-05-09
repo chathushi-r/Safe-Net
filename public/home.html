@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="./style/homeStyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    </head>
+    <body>
+        <div class="main">
+            <div class="nav">
+                <div class="logo">
+                    <h2>SafeNet</h2>
+                </div>
+                <div class="menu">
+                    <ul class="mainUL">
+                        <li><a href="home.html">HOME</a></li>
+                        <li id="scan"><a href="#">SCAN</a><i class="fa-solid fa-caret-down fa-lg"></i>
+                            <div class="subMenu">
+                                <ul class="subUl">
+                                    <li><a href="scanFile.html">PE FILE</a></li>
+                                    <li><a href="scanURL.html">URL</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="history.html">HISTORY</a></li>
+                        <li><a id="logout">LOGOUT</a></li>
+                    </ul>
+                </div>
+            </div>    
+            <div class="account">
+                <div id="userIconArea">
+                    <i id="userIcon" class="fa-solid fa-circle-user"></i>
+                    <p id="username">Username</p>
+                    <p id="userrole">UserRole</p>
+                </div>
+                <div id="profileInfo">
+                    <h2 id="profileHeading">Profile Information</h2>
+                    <hr id="profilehr">
+                    <label id="userIDlbl" for="userIDlbl">User ID</label><br>
+                    <label id="userID" for="userID">---</label><br><br><br>
+                    <label id="firstNamelbl" for="firstNamelbl">First Name</label><br>
+                    <label id="fName" for="fName">---</label><br><br><br>
+                    <label id="lastNamelbl" for="lastNamelbl">Last Name</label><br>
+                    <label id="lName" for="lName">---</label><br><br><br>
+                    <label id="emaillbl" for="emaillbl">Email</label><br>
+                    <label id="email" for="email">---</label><br>
+                </div>
+            </div>
+            <div class="welcomeMsg">
+                <div id="message">
+                    <h2>Welcome <span id="welcomefName"></span>!</h2>
+                </div>
+            </div>
+            <div class="scanFileInfo">
+                <div id="fileIcon">
+                    <i class="fa-solid fa-file"></i>
+                </div>
+                <div id="fileDesc">
+                    <p>Explore the PE file scan option to ensure the integrity of your PE files and applications. <br>
+                        With file scanning, you can trust that what you download or install is secure and free from malware.
+                    </p>
+                </div>
+                <div id ="fileBtnSection">
+                    <button id="fileBtn"><a href="scanFile.html">SCAN PE FILE</a></button>
+                </div>
+            </div>
+            <div class="scanURLInfo">
+                <div id="urlIcon">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+                <div id="urlDesc">
+                    <p>Explore the scan URL option to stay one step ahead of cyber threats and surf the web with confidence.
+                       This option scans URL to detect any malware present and provide insights on how to avoid potential threats.
+                    </p>
+                </div>
+                <div id ="urlBtnSection">
+                    <button id="urlBtn"><a href="scanURL.html">SCAN URL</a></button>
+                </div>
+            </div>
+            <div class="about">
+                <div id="aboutIcon">
+                    <i id="abticon" class="fa-solid fa-circle-info"></i>
+                </div>
+                <div id="aboutDesc">
+                    <p id="abtDesc">SafeNet is a platform that allows the scanning of Portable Executable (PE) files and URLs to detect 
+                       malware. This scan provides a comprehensive result on the file status (malicious/benign) and..
+                    </p>
+                </div>
+                <div id ="aboutBtnSection">
+                    <button id="aboutBtn"><a id="abtBtn" href="about.html">READ MORE</a></button>
+                </div>
+                
+            </div>
+            <div class="history">
+                <div id="historyHeadingArea">
+                    <i id="historyIcon"class="fa-solid fa-clock-rotate-left"></i>
+                    <h2 id="historyHeading">Recent Scan History</h2>
+                    <div id="historySelect">
+                        <select id="historyDropdown" name="historyDropdown">
+                            <option value="-">SELECT</option>
+                            <option value="url">URL History</option>
+                            <option value="file">File History</option>
+                        </select>
+                    </div>
+                    <div id="history">
+                        <button id="historyBtn">View Full History</button>
+                    </div>
+                </div>
+                <hr id="historyhr">
+                <div id="urlhistoryDiv">
+                    <span id="errMsgHistory"></span>
+                    <table id="historyTable">
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script src="/js/home.js"></script>   
+    </body>
+</html>

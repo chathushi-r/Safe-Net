@@ -1,0 +1,19 @@
+To connect the database to the application, you need to have MySQL Server and MySQL Workbench to import the db files.
+
+Before importing:
+	1) Open MySQL Workbench
+	2) Connect to a MySQL Server
+	3) Create a new schema
+
+Begin the import process:
+	1) Access "Data Import" tool in "Server" menu
+	2) Select Import Source: Choose the option to import from a self-contained file. (Select a db file)
+	3) Set the default target schema to the new schema you created
+	4) Intiate the import process.
+
+Perform the import procedure for all of the following files
+- safenetdb_filehistory
+- safenetdb_urlhistory
+- safenetdb_users
+
+After successful import, configure the database.js file in safenet\config to connect the database.

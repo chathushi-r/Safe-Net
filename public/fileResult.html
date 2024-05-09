@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scan URL</title>
+        <link rel="stylesheet" href="./style/fileResult.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    </head>
+    <body>
+        <div class="main">
+            <div class="nav">
+                <div class="logo">
+                    <h2>SafeNet</h2>
+                </div>
+                <div class="menu">
+                    <ul class="mainUL">
+                        <li><a href="home.html">HOME</a></li>
+                        <li id="scan"><a href="#">SCAN</a><i class="fa-solid fa-caret-down fa-lg"></i>
+                            <div class="subMenu">
+                                <ul class="subUl">
+                                    <li><a href="scanFile.html">PE FILE</a></li>
+                                    <li><a href="scanURL.html">URL</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="history.html">HISTORY</a></li>
+                        <li><a id="logout">LOGOUT</a></li>
+                    </ul>
+                </div>
+            </div>   
+            <div class="scnheading">
+                <h2 id="statusHeading">Scan Result :</h2>
+                <button id="detection">Malicious</button>
+                <button id="newScan"><a id="newscan" href="#">New Scan</a></button>
+                <hr id="urlhr">
+            </div> 
+            <div id="scanResultDetails">
+                <div id="scnMainDetails">
+                    <div id="statusDiv">
+                        <label for="filename" id="filename">Filename : </label>
+                         <label for="filenameInp" id="filenameInp"></label><br><br>
+                    </div>
+                    <div id="datetimeDiv">
+                        <div id="inputDateTime">
+                            <label for="date" id="date">Date of scan  : </label>
+                            <label for="dateInp" id="dateInp"></label><br><br>
+                            <label for="time" id="time">Time of scan : </label>
+                            <label for="timeInp" id="timeInp"></label><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="fileResult">
+                    <div id="fileScanDetails">
+                        <div class="scnsubHeading">
+                            <div id="scanHd"><h4 id="resHeading">Recommendations & Resources</h4></div>
+                        </div>
+                        <div class="scnDetails">
+                            <div id="links">
+                                <label for="safeRec" id="safeRec">General safety recommendations : </label><br>
+                                <ul id="safeRecPoints">
+                                </ul>
+                                <label for="otherRes" id="otherRes">Other Resources : </label><br>
+                                <ul id="resourcelinks">
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div id="fileFeatDetails">
+                        <div class="scnsubHeading">
+                            <div id="scanHd"><h4 id="featHeading">File Features</h4></div>
+                        </div>
+                        <div class="filefeatures">
+                            <div id="urlfeatdiv">
+                                <label for="malwareType" id="malwareType">Malware Type: </label>
+                                <label for="malwareTypeInp" id="malwareTypeInp"></label><br><br>
+                                <label for="fileSize" id="fileSize">File Size : </label>
+                                <label for="fileSizeInp" id="fileSizeInp"></label><br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            
+        </div>
+        <script src="/js/fileResult.js"></script>   
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style/indexStyle.css">
+</head>
+<body>
+    <div class="main">
+        <div id="overlay"></div>
+            <div class="nav">
+                <div class="logo">
+                    <h2>SafeNet</h2>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><button id="loginPage">Login</button></li>
+                        <li><button id="signUpPage">Sign Up</button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <h2>Detecting <span id="contentHeading">malware</span>, <br> Keeping you safe</h2> <br>
+                <p> Welcome to SafeNet, where cutting edge technology meets cybersecurity excellence. <br> 
+                    Our malware detection tool provides fast scanning and comprehensive scan results to empower <br> 
+                    individuals and businesses to safeguard their valuable data, privacy, and peace of mind. <br> <br>
+                    Ready to scan your files for malware? <br> <br>
+                    Don't wait - get started now!
+                </p>
+                <button id="contentSignUpbtn"> <a href="#">SIGN UP</a></button>
+            </div>
+        </div>
+        <div id="loginPopUpForm">
+            <div id="closeBtnLogin">&times;</div>
+            <h2>LOGIN</h2>
+            <form id="loginForm">
+                <input id="uname" type="text" placeholder="Username">
+                <input id="pwd" type="password" placeholder="Password">
+                <div id="errorMsg"><span ></span></div>
+                <button id="login" type="submit" disabled> LOGIN</button>
+            </form>
+            <p>Don't have an account?</p><br>
+            <button id="showSignUpForm">SIGN UP</button>
+        </div>
+        <div id="signUpPopUpForm">
+            <div id="closeBtnSignUp">&times;</div>
+            <h2>SIGN UP</h2>
+            <form id="signUpForm">
+                <input type="text" id="fname" placeholder="First Name">
+                <input type="text" id="lname" placeholder="Last Name">
+                <input type="text" id = "email" placeholder="Email">
+                <input type="text" id = "unameSignUp" placeholder="Username">
+                <input type="password" id="pwdSignUp"  placeholder="Password">
+                <input type="password" id="rpwd" placeholder="Retype Password">
+                <div id="errorMsgSignUp"><span ></span></div>
+                <button id="signup" type="submit" disabled> SIGN UP</button>
+            </form>
+        </div>
+        <div id="SignupSuccessfulMsg">
+            <div id="closeBtnMsg">&times;</div>
+            <h2>SafeNet</h2>
+            <h3>User registered successfully!</h3>
+        </div>
+    </div>
+    <script src="/js/index.js"></script>
+</body>
+</html>

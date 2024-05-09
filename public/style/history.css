@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    background: linear-gradient(to top, rgba(0,0,0,0.7)50%, rgba(0,0,0,0.7)50%);
+}
+
+.main{
+    width: 100%;
+    height: 100vh;    
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.logo{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo h2{
+    color:#2f8aa8;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 35px;
+    float: left;
+    padding-top: 25px;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 50px;
+    text-align: center;
+}
+
+.mainUL {
+    display: inline-flex;
+    list-style: none;
+    color: white;
+    padding-left: 690px;
+}
+
+.mainUL li {
+    width: 95px;
+    height: 20px;
+    margin: 15px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.mainUL li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+
+.mainUL li:hover{
+    background-color: #2f8aa8;
+    border-radius: 3px;
+}
+
+.menu i{
+    margin-left: 10px;
+}
+
+.subMenu{
+    display: none;
+}
+
+.mainUL li:hover .subMenu{
+    display: block;
+    position: absolute;
+    background: black;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.subMenu li{
+    display: block;
+    margin:20px;
+    width: 100px;
+    padding: 5px;
+    border-bottom: 2px solid;
+}
+
+.history{
+    float:left;
+    background-color:rgba(0, 0, 0, 0.816);
+    width: 95%;
+    height: 85vh;
+    margin-top: 25px;
+    margin-left: 30px;
+    border-radius: 5px;
+    text-align: left;
+    overflow: auto;
+}
+
+#historyHeadingArea{
+    height: 5vh;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #2f8aa8;
+    font-size: 28px;
+}
+
+#historyIcon{
+    float: left;
+}
+
+#historyHeading{
+    float: left;
+    margin-top: 5px;
+    margin-left: 15px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+#historyhr{
+    margin-top: 4px;
+    width: 95%;
+    margin-left: 20px;
+}
+
+#urlhistoryDiv{
+    width: 95%;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+#historyTable{
+    color: #aaa;
+    width: 98%;
+}
+
+#historyTable th, td {
+    border: 2px solid #aaaaaa6c;
+    padding: 8px;
+    text-align: left;
+}
+
+#historyTable th{
+    font-weight: bold;
+    color: #2f8aa8;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#historyDropdown{
+    float: left;
+    margin-left: 30px;
+    margin-top: 5px;
+    height: 25px;
+    background-color: black;
+    color: #2f8aa8;
+}
+
+#errMsgHistory{
+    display: none;
+    color: white;
+    font-family: Arial,  sans-serif;
+    font-size: 15px;
+}

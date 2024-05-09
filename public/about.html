@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About</title>
+        <link rel="stylesheet" href="./style/about.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    </head>
+    <body>
+        <div class="main">
+            <div class="nav">
+                <div class="logo">
+                    <h2>SafeNet</h2>
+                </div>
+                <div class="menu">
+                    <ul class="mainUL">
+                        <li><a href="home.html">HOME</a></li>
+                        <li id="scan"><a href="#">SCAN</a><i class="fa-solid fa-caret-down fa-lg"></i>
+                            <div class="subMenu">
+                                <ul class="subUl">
+                                    <li><a href="scanFile.html">PE FILE</a></li>
+                                    <li><a href="scanURL.html">URL</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="history.html">HISTORY</a></li>
+                        <li><a id="logout">LOGOUT</a></li>
+                    </ul>
+                </div>
+            </div>    
+            <div class="content">
+                <h2>What is <span id="contentHeading">SafeNet</span>?</h2> <br>
+                <p> SafeNet is a cutting-edge web-based malware detection platform that empowers users to assess the safety of files and <br> 
+                    URLs before opening or visiting them. Designed with security in mind, SafeNet serves as a powerful defense <br>
+                    against the ever-evolving landscape of online threats.</p>
+                <p><span id="contentFeat">PE File & URL Scanning:</span> SafeNet supports the scanning of PE file types and users <br>
+                     can also enter URLs for website scanning.</p>
+                <p><span id="contentFeat">Comprehensive Malware Detection:</span> The application employs a combination of machine learning models <br>
+                     that extracts significant features of files/urls to detect various malware families and classify urls/files as malicious/safe.</p>
+                <p><span id="contentFeat">Real-Time Results:</span> Users receive real-time scan results, which categorize files and URLs as either <br>
+                    "Benign" or "Malicious." For malicious items, scan result include information such as the type of malware, and <br>
+                    recommended actions for handling malicious content.</p> 
+                <p><span id="contentFeat">User-Friendly Interface:</span> The web application features an intuitive and user-friendly interface, ensuring <br>
+                    that users can easily upload PE files, enter URLs, and interpret scan results.</p><br> 
+            </div>
+            <div id="img">
+                <img src="./style/aboutImg.jpg" alt="Image preview" width="400" height="550"><br><br>
+            </div>
+        </div>
+        <script src="/js/home.js"></script>   
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scan PE File</title>
+        <link rel="stylesheet" href="./style/scanFile.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    </head>
+    <body>
+        <div class="main">
+            <div class="nav">
+                <div class="logo">
+                    <h2>SafeNet</h2>
+                </div>
+                <div class="menu">
+                    <ul class="mainUL">
+                        <li><a href="home.html">HOME</a></li>
+                        <li id="scan"><a href="#">SCAN</a><i class="fa-solid fa-caret-down fa-lg"></i>
+                            <div class="subMenu">
+                                <ul class="subUl">
+                                    <li><a href="scanFile.html">PE FILE</a></li>
+                                    <li><a href="scanURL.html">URL</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="history.html">HISTORY</a></li>
+                        <li><a id="logout">LOGOUT</a></li>
+                    </ul>
+                </div>
+            </div>    
+            <div class="upload">
+                <h2>Start <span id="scnHeading">scanning</span>, <br>Portable Executable (PE) file</h2>
+                <p>Explore our PE File Scanner to detect potential threats in PE files with precision and ease. <br>
+                   Stay one step ahead of cyber threats by making intelligent decisions based on the insights<br> gained 
+                   from our thorough PE file scans. <br> <br> Upload a PE file and scan for threats!
+                </p>
+            </div>
+            <div id="uploadFormDiv">
+                <form id="uploadForm">
+                    <div class="formContent">
+                        <input id="inputFile" type="file" name="file">
+                        <i id="uploadIcn" class="fa-solid fa-file-arrow-up"></i>
+                        <p id="uploadPlaceholder">Click to browse PE file</p>
+                    </div>
+                    <button type="submit" id="scanFile" disabled>SCAN FILE</button>
+                </form>
+            </div>
+        </div>
+        <script src="/js/scanFile.js"></script>   
+    </body>
+</html>
