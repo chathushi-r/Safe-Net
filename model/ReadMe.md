@@ -8,7 +8,7 @@ URL Model
 - Malicious_n_Non-Malicious URL (Link: https://www.kaggle.com/datasets/antonyj453/urldataset/data)
 - Malicious And Benign URLs (Link: https://www.kaggle.com/datasets/siddharthkumar25/malicious-and-benign-urls/)
           
-- To download the model to a file: Check cell 31 in the notebook which used the joblib library to download the model 
+- To download the model to a file: Check cell 31 in the notebook which used the joblib library to download the model to a .pkl file
 
 File model
 
