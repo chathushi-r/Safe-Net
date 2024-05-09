@@ -93,51 +93,51 @@ def predictUrl():
 @app.route('/predictPeFile', methods=['POST'])
 def predictPeFile():
     
-    if 'file' in request.files:
-        interp = 'lanczos'
-        dpi = 300
+ #   if 'file' in request.files:
+  #      interp = 'lanczos'
+   #     dpi = 300
         
-        #retrieve file
-        received_file = request.files['file']
+    #    #retrieve file
+     #   received_file = request.files['file']
 
         # Read the file data and store it in a variable
-        file_data = received_file.read()
-        fileName = received_file.filename
-        file_size = len(file_data)
+      #  file_data = received_file.read()
+       # fileName = received_file.filename
+        #file_size = len(file_data)
 
         #rgb image prediction
-        imgFileName = filePrediction.exeToRGBImg(file_data)
-        folder_name = 'rgb_img' 
-        file_name = imgFileName 
-        current_directory = os.getcwd()
-        file_path = os.path.join(current_directory, folder_name, file_name)
-        className, preventionTip = filePrediction.predict_image_rgb(file_path,peFileModel_RGB)
-        print(className)
-        if className.lower() == 'malware':
+        #imgFileName = filePrediction.exeToRGBImg(file_data)
+        #folder_name = 'rgb_img' 
+        #file_name = imgFileName 
+        #current_directory = os.getcwd()
+        #file_path = os.path.join(current_directory, folder_name, file_name)
+        #className, preventionTip = filePrediction.predict_image_rgb(file_path,peFileModel_RGB)
+        #print(className)
+        #if className.lower() == 'malware':
             #greyscale image prediction
-            imgFilePath = filePrediction.createGreyScaleImage(file_data,fileName)
-            classname,preventiontip,resourcelink = filePrediction.predict_image_greyscale(imgFilePath,peFileModel_GreyScale)
-            resultData = {
-            "status": className,
-            "malwaretype":classname,
-            "filename": fileName,
-            "filesize": file_size,
-            "prevention":preventiontip,
-            "resourceLink": resourcelink,
-            }
-        elif className.lower() == 'benign':
-            resultData = {
-            "status": className,
-            "malwaretype":"-",
-            "filename": fileName,
-            "filesize": file_size,
-            "prevention":"-",
-            "resourceLink": "-"
-            }
-        return jsonify(resultData)  
-    else:
-        msg ="no file received"
-        return jsonify(msg)
+         #   imgFilePath = filePrediction.createGreyScaleImage(file_data,fileName)
+          #  classname,preventiontip,resourcelink = filePrediction.predict_image_greyscale(imgFilePath,peFileModel_GreyScale)
+           # resultData = {
+            #"status": className,
+            #"malwaretype":classname,
+            #"filename": fileName,
+            #"filesize": file_size,
+            #"prevention":preventiontip,
+            #"resourceLink": resourcelink,
+            #}
+        #elif className.lower() == 'benign':
+         #   resultData = {
+          #  "status": className,
+           # "malwaretype":"-",
+            #"filename": fileName,
+            #"filesize": file_size,
+            #"prevention":"-",
+            #"resourceLink": "-"
+            #}
+        #return jsonify(resultData)  
+   # else:
+     #   msg ="no file received"
+      #  return jsonify(msg)
         
 
 if __name__ == '__main__':
