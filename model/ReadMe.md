@@ -12,6 +12,6 @@ URL Model
 
 File model
 
--Model used: Resnet
+- Model used: Resnet
 
 File model will be added soon
