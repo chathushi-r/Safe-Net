@@ -1,6 +1,7 @@
 This application consists of two machine learning models that is used for scanning urls and PE files.
 
-**URL Model **
+URL Model
+
 Classification model used: Random Forest Classifier
 
 Datasets: Two public datasets were obtained from Kaggle and combined as one as named in the notebook as final_dataset.csv
