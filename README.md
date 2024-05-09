@@ -18,7 +18,7 @@ Technologies used:
 - To build the front-end: HTML/CSS/JavaScript
 - To build the web back-end: Nodejs, Express, Flask, Python
 - To build the database: MySQL
-- To build the ML models for scanning: Python (Access the source codes for url model in the SafeNet-URL-Scan-Model repository, file scan model will be added soon)
+- To build the ML models for scanning: Python 
 
 IDEs used:
 - Visual Studio Code
