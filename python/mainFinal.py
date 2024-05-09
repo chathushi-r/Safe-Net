@@ -90,8 +90,8 @@ def predictUrl():
         return jsonify({"error": str(e)})
 
 
-@app.route('/predictPeFile', methods=['POST'])
-def predictPeFile():
+#@app.route('/predictPeFile', methods=['POST'])
+#def predictPeFile():
     
  #   if 'file' in request.files:
   #      interp = 'lanczos'
