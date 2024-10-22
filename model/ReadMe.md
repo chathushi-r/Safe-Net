@@ -14,4 +14,4 @@ File model
 
 - Model used: Resnet
 
-File model will be added soon
+
